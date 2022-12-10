@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sydney, New South Wales</title>
+    <!-- bootstrap    -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- local css -->
+    <link rel="stylesheet" href="../css/city_sample_Albury.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header style="background: url(../database/Sydney/sydney_background.png) center/cover no-repeat;" title="The image is sourced from https://a.cdn-hotels.com/gdcs/production5/d1996/54fdb73f-eee5-4612-a3e7-6fc7ed2f7bee.jpg" >
+        <div class="name-box mask-darken">
+    
+            <h1>Sydney</h1>
+            
+            <p>Sydney is the capital city of the state of New South Wales, and the most populous city in both Australia and Oceania. Located on Australia's east coast, the metropolis surrounds Sydney Harbour and extends about 70 km (43.5 mi) towards the Blue Mountains to the west, Hawkesbury to the north, the Royal National Park to the south and Macarthur to the south-west.</p>
+        
+        </div>
+        <nav>
+            <ul class="dimensions">
+                <li class="dimension-item" id="climate">Climate</li>
+                <li class="dimension-item" id="economy">Living & Housing</li>
+                <li class="dimension-item" id="population">People</li>
+                <li class="dimension-item" id="culture">Culture & Recreation </li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <img id="backicon" src="../images/arrowl.png" onclick="history.back()">
+    </aside>
+    <main>
+        <div class="dimention-content" id="climate-content" style="display: none;">
+            <div class="temperature">
+                <span class="climate-title">Temperature <img class="climate-icon" src="../images/sun.png"></span>
+                <p>The warmest month is January, with an average high-temperature of 25.9°C (78.6°F) and an average low-temperature of 18.7°C (65.7°F).</p>
+                <p>With an average high-temperature of 16.3°C (61.3°F) and an average low-temperature of 8.1°C (46.6°F), July is the coldest month in Sydney.</p>
+                <img class="climate-chart" src="../database/Sydney/temperature_weather-atlas.com.png">
+                <p>The months with the most sunshine are August through October and December, with an average of 7.9h of sunshine, and June has the least sunshine of the year, with an average of 5.9h of sunshine.</p>
+               
+            </div>  
+            <div class="rain">
+                <span class="climate-title">Rain<img class="climate-icon" src="../images/rain.png"></span>
+                <p>Throughout the year, in Sydney, there are 143.4 rainfall days, and 1212mm (47.72") of precipitation is accumulated. </p>
+                <img class="climate-chart" src="../database/Sydney/rainfall days_weather-atlas.com.png">
+                <p>The least humid month in Sydney is August, with an average relative humidity of 49%.The month with the least rainfall in Sydney, Australia, is September, when the rain falls for 10.5 days and typically collects 68mm (2.68") of precipitation.
+                </p>
+                <p>The most humid month in Sydney is February, with an average relative humidity of 64%, whereas June is the month with the most rainfall. Rain falls for 12.5 days and accumulates 132mm (5.2") of precipitation.
+                </p>
+                
+            </div>
+            <!-- <div class="climate-other">
+                <SPAN class="climate-title">Wind<img class="climate-icon" src="../images/wind.png"></SPAN>
+                <img class="climate-chart" src="../database/Newcastle/wind_newcastle.png" title="Sourced from https://www.weather-atlas.com/en/australia/">
+            </div> -->
+            <p id="copyright-claim">* The above information is sourced from <i>Weather-At.</i> Take a visit for <a href="https://www.weather-atlas.com/en/australia/">more information...</a></p>    
+        </div>
+        <div class="dimention-content" id="economy-content" style="display: none">
+            <div class="economy-container" style="background: url(../database/Sydney/Sydney_occupation_background.png) center/cover no-repeat;">
+                <div id="salary-box"> 
+                    <h4>Average Salary <img src="../images/salary.png" class="economy-icon"></h4>
+                    <p>The average salary in Sydney, New South Wales is AU$26.56 per hour and AU$78,000 per year, according to <i><a href="https://www.payscale.com/research/AU/ ">Payscale</a></i> statistics by November 2022.</p> 
+                    <p>The most popular occupations are Operations Manager, Project Manager, and Software Engineer which pay between AU$51,000 and AU$144,000 per year.</p>
+                    <p> The most popular employers are Commonwealth Bank of Australia, TAL, and Woolworths..</p>
+                </div>     
+            </div>
+            <div class="economy-container">
+                <div class="house">
+                    <h4>House Price <img src="../images/house.png" class="economy-icon"></h4>
+                    <p>The median House sales price is AU$1,036,727 for the capital city area and $702,629 for regional areas, and the median house rent is $650 per week, according to <i><a href="https://www.realestate.com.au/" target="blank">Realestate</a></i> market survey in November 2022. </p>
+                </div> 
+            
+            
+                <div class="apartment">
+                    <h4>Unit and Apartment Price<img src="../images/apartment.png" class="economy-icon"></h4>
+                    <p>The median Unit and Apartment sales price is ranged from AU$740,000 to $2,650,000 for apartments with 1 to 3 bedrooms, and the median rent is AU$600-$1400 per week for apartments with 1-3 bedrooms, according to <i><a href="https://www.realestate.com.au/" target="blank">Realestate</a></i> market survey in November 2022 </p>
+                </div>           
+         </div>
+        </div>
+        <div class="dimention-content" id="population-content" style="display: block">
+            <div class="population-title">
+                <div> Population &nbsp&nbsp<span style="color:rgba(80, 77, 77, .6)">5,231,150 (Metro)</span></div> 
+                <div id="vertical-line"></div>
+                <div>Median Age &nbsp&nbsp<span style="color:rgba(80, 77, 77, .6)">30</span></div>
+            </div>
+            <div class="population-grid">
+                <div id="grid-1">
+                    <h3>Ancestry</h3>
+                    <p>The most common ancestries in Sydney were Chinese 24.6%, Thai 11.3%, English 9.3%, Indonesian 5.1% and Korean 4.9%.  </p> 
+                </div>
+                <div id="grid-2">
+                    <h3>Country of birth</h3>
+                    <p>In Sydney, 17.0% of people were born in Australia. The most common countries of birth were Thailand 13.3%, China (excludes SARs and Taiwan) 11.7%, Indonesia 10.7%, Korea, Republic of (South) 5.4% and India 3.5%.  </p>
+                </div>
+                <div id="grid-3">
+                    <h3>Religion</h3>
+                    <p>In 2021, 30.3% of Sydney residents identified themselves as having no religion. Christianity was the largest religious affiliation at 46%, the largest denominations of which were Catholicism at 23.1% and Anglicanism at 9.2%.
+                    </p> 
+                    <p>The most common non-Christian religious affiliations were Islam (6.3%), Hinduism (4.8%), Buddhism (3.8%), Sikhism (0.7%), and Judaism (0.7%). About 500 people identified with traditional Aboriginal religions.
+                    </p>
+                </div>
+            </div>
+
+            <p id="copyright-claim">
+                * The above information is sourced from <i>Australian Bureau of Statitics.</i> Take a visit for <a href="https://www.abs.gov.au/census/">more information...</a>
+            </p>
+        </div>
+        <div class="dimention-content" id="culture-content" style="display: none">
+            <div class="recreation-title">
+                <h2>Sydney Opera House</h2>
+                <p>Dine at a world-class restaurant, see a performance or step behind closed doors for a tour of backstage areas, complete with informative history and fun celebrity anecdotes.</p>
+                <div class="imagegroup">
+                   <div style="background: url(../database/Sydney/op1.png) center/cover no-repeat">Dance: Romeo and Juliet <br>Dec 2022-21 Dec 2022</div>
+                    <div style="background: url(../database/Sydney/op2.png) center/cover no-repeat"></div>
+                    <div style="background: url(../database/Sydney/op3.png) center/cover no-repeat">Music: Kronos Quartet <br>14 Mar 23</div>
+                </div>
+            </div>
+            <div class="recreation-title">
+               <h2>Beaches in Sydney</h2> 
+               <p>There are more than 100 picturesque beaches in Sydney – from calm, sheltered bays and secret coves to busy surf beaches and world-famous tourist destinations. Many have great facilities and are easily accessible from Sydney’s city centre. A range of aquatic activities are also available, including snorkelling, kayaking, canoeing, stand up paddle boarding and surfing. </p>
+               <div class="imagegroup">
+                   <div style="background: url(../database/Sydney/sb1.png) center/cover no-repeat" >BONDI BEACH</div>
+                   <div style="background: url(../database/Sydney/sb2.png) center/cover no-repeat">BRONTE BEACH</div>
+                   <div style="background: url(../database/Sydney/sb3.png) center/cover no-repeat">GORDONS BAY</div>
+               </div>
+            </div>
+            <div class="recreation-title">
+                <h2>THE BLUE MOUNTAINS</h2>
+                <p>The Blue Mountains is best known for its soaring sandstone ridges blanketed in native bushland. Nestled within the wilderness lie charming mountain towns, ancient Aboriginal rock art and the iconic tourist attraction of Scenic World. Expect to be enchanted by the natural beauty when you set out to explore the walking tracks that loop around the verdant valleys and craggy cliffs. </p>
+                <div class="imagegroup">
+                    <div style="background: url(../database/Sydney/bm1.png) center/cover no-repeat">The Three Sisters</div>
+                    <div style="background: url(../database/Sydney/bm2.png) center/cover no-repeat">The Beyond Skyway</div>
+                    <div style="background: url(../database/Sydney/bm3.png) center/cover no-repeat">Scale Canyons</div>
+                </div>
+            </div>
+            <p id="copyright-claim">* The above information is sourced from <i>Australia.com</i> Take a visit for <a href="https://www.australia.com/en/places/sydney-and-surrounds/">more information...</a></p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer1">
+           
+            <div class="footer-item" id="project-text">
+                <h5>About THE LOGO</h5>
+                <p> Drawn by Adeline via photoshop. Cat symbolizes  every curious visiters, Scarf indicates travelling across Australia.</p><br>
+                <h5>ABOUT THIS PROJRCT</h5>
+                <p>Introduce 15+ main cities of Australia via a interactive search box.</p>
+                <p> Responsive design for Each City's demographic, economic, climate and cultural perspectives
+                </p>
+                <p>Not For Profit & knowledge Popularization</p>
+            </div>
+            <div class="footer-item" id="logo-footer-box">
+                <img src="../images/ga_project_Adeline_logo.png">
+            </div>
+
+            <div class="footer-item" id="outer-resource">
+                <h5>DATA RESOURCES</h5>
+                <p>WEATHER: <a href="https://www.weather-atlas.com/en/australia">Weather-Atlas</a> </p>
+                <p>SALARY: <a href="https://www.payscale.com/research/AU/Country=Australia/Salary">Payscale</a></p>
+                <p>HOUSING: <a href="https://www.realestate.com.au/">Realestate</a> <a href=" & https://propertyupdate.com.au/">Propertyupdate</a></p>
+                <p>DEMOGRAPHICS: <a href="https://www.abs.gov.au/census/">Australian Bureau of Statitics</a></p>
+                <p>TRAVEL: <a href="https://cn.tripadvisor.com/">Australia.com</a>& Various Public Websites of Australia</p>
+                <p>OTHER GERNERAL INFORMATION: <a href="https://www.wikipedia.org/">Wikipedia</a> </p>
+               
+            </div>
+            <div class="footer-item" id="about-me">
+                <h5>ABOUT ME</h5>
+                <P>Adeline, General Assembly Front-end web development program. </P>
+                <p>Enjoy tourist spots in Melbourne and Australia.</p>
+                <P>Major in Accouting of Unimelb (incl Economics & Statistics  </P>
+                <p>Github: https://github.com/adeline-develop
+                </p>
+            </div>
+        </div>
+        <div class="footer2">
+            <p>©Copyright 2022-All rights reserved</p></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script></script>
+    <script src="../javascript/city_sample_Albury.js"></script>
+ 
+
+</body>
+</html>

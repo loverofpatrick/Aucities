@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geelong, Victoria</title>
+
+    <!-- bootstrap    -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/city_sample_Albury.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      style="
+        background: url(../database/Geelong/geelong_bg.png) center/cover
+          no-repeat;
+      "
+      title="The image is sourced from https://www.travelawaits.com/"
+    >
+      <div class="name-box mask-darken">
+        <h1>Geelong</h1>
+
+        <p>
+          The City of Greater Geelong is located in south-western Victoria,
+          about 75 kilometres south-west of the Melbourne CBD.Its Estimated
+          Resident Population for 2021 is 270,776, with a population density of
+          216.2 persons per square km.
+        </p>
+      </div>
+      <nav>
+        <ul class="dimensions">
+          <li class="dimension-item" id="climate">Climate</li>
+          <li class="dimension-item" id="economy">Living & Housing</li>
+          <li class="dimension-item" id="population">People</li>
+          <li class="dimension-item" id="culture">Culture & Recreation</li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <img id="backicon" src="../images/arrowl.png" onclick="history.back()" />
+    </aside>
+    <main>
+      <div class="dimention-content" id="climate-content" style="display: none">
+        <div class="temperature">
+          <span class="climate-title"
+            >Temperature <img class="climate-icon" src="../images/sun.png"
+          /></span>
+          <p>
+            January is the warmest month in Geelong, Australia, with an average
+            high-temperature of 25.1°C (77.2°F) and an average low-temperature
+            of 14.5°C (58.1°F).
+          </p>
+          <p>
+            With an average high-temperature of 13.1°C (55.6°F) and an average
+            low-temperature of 7.3°C (45.1°F), July is the coldest month.
+          </p>
+          <img
+            class="climate-chart"
+            src="../database/Geelong/temperature_geelong.png"
+          />
+          <p>
+            With an average of 9.7h of sunshine, December has the most sunshine
+            of the year in Geelong, Australia. With an average of 6.7h of
+            sunshine, August has the least sunshine of the year in Geelong,
+            Australia.
+          </p>
+        </div>
+        <div class="rain">
+          <span class="climate-title"
+            >Rain<img class="climate-icon" src="../images/rain.png"
+          /></span>
+          <p>
+            Throughout the year, in Geelong, there are 153 rainfall days, and
+            377mm (14.84") of precipitation is accumulated.
+          </p>
+          <img
+            class="climate-chart"
+            src="../database/Geelong/rain_geelong.png"
+          />
+          <p>
+            June is the most humid month in Geelong, Australia, with an average
+            relative humidity of 80%. The month with the most rainfall is
+            February, when the rain falls for 10.1 days and typically aggregates
+            up to 40mm (1.57") of precipitation.
+          </p>
+          <p>
+            With an average relative humidity of 64%, January is the least humid
+            month in Geelong, Australia. March is the month with the least
+            rainfall in Geelong, Australia. Rain falls for 12.9 days and
+            accumulates 25mm (0.98") of precipitation.
+          </p>
+        </div>
+        <div class="climate-other">
+          <span class="climate-title"
+            >Wind<img class="climate-icon" src="../images/wind.png"
+          /></span>
+          <img
+            class="climate-chart"
+            src="../database/Geelong/wind_geelong.png"
+            title="Sourced from https://www.weather-atlas.com/en/australia/"
+          />
+        </div>
+        <p id="copyright-claim">
+          * The above information is sourced from <i>Weather-At.</i> Take a
+          visit for
+          <a href="https://www.weather-atlas.com/en/australia/"
+            >more information...</a
+          >
+        </p>
+      </div>
+      <div class="dimention-content" id="economy-content" style="display: none">
+        <div
+          class="economy-container"
+          style="
+            background: url(../database/Ballarat/occupation_nurse.png)
+              center/cover no-repeat;
+          "
+        >
+          <div id="salary-box">
+            <h4>
+              Average Salary
+              <img src="../images/salary.png" class="economy-icon" />
+            </h4>
+            <p>
+              The average salary in Geelong, Victoria is AU$25.81 per hour and
+              AU$64,000 per year, according to
+              <i
+                ><a href="https://www.payscale.com/research/AU/ "
+                  >Payscale</a
+                ></i
+              >
+              statistics by November 2022.
+            </p>
+            <p>
+              The most popular occupations in Geelong, Victoria are Carpenter,
+              Personal Care Assistant (PCA), and Registered Nurse (RN) which pay
+              between AU$19.92 and AU$38.90 per hour.
+            </p>
+            <p>
+              The most popular employers are Barwon Health, Gorell Enterprises
+              Inc., and McDonalds Australia.
+            </p>
+          </div>
+        </div>
+        <div class="economy-container">
+          <div class="house">
+            <h4>
+              House Price <img src="../images/house.png" class="economy-icon" />
+            </h4>
+            <p>
+              The median House sales price is AU $775,000-$1,365,000 for houses
+              with 2-4 bedrooms, and the median house rent is $432-$600 per week
+              for houses with 2-4 bedrooms, according to
+              <i
+                ><a href="https://www.realestate.com.au/" target="blank"
+                  >Realestate</a
+                ></i
+              >
+              market survey in November 2022.
+            </p>
+          </div>
+
+          <div class="apartment">
+            <h4>
+              Unit and Apartment Price<img
+                src="../images/apartment.png"
+                class="economy-icon"
+              />
+            </h4>
+            <p>
+              The median Unit and Apartment sales price is $649,500-$1,025,000
+              for apartments with 1-3 bedrooms, and the median rent is
+              $370-AU$527 per week for apartments with 1-3 bedrooms, according
+              to
+              <i
+                ><a href="https://www.realestate.com.au/" target="blank"
+                  >Realestate</a
+                ></i
+              >
+              market survey in November 2022
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="dimention-content"
+        id="population-content"
+        style="display: block"
+      >
+        <div class="population-title">
+          <div>
+            Population &nbsp&nbsp<span style="color: rgba(80, 77, 77, 0.6)"
+              >270,776(City)</span
+            >
+          </div>
+          <div id="vertical-line"></div>
+          <div>
+            Median Age &nbsp&nbsp<span style="color: rgba(80, 77, 77, 0.6)"
+              >40</span
+            >
+          </div>
+        </div>
+        <div class="population-grid">
+          <div id="grid-1">
+            <h3>Ancestry</h3>
+            <p>
+              The most common ancestries in Geelong were English 28.4%,
+              Australian 26.6%, Irish 9.7%, Scottish 8.5% and German 3.3%.
+            </p>
+          </div>
+          <div id="grid-2">
+            <h3>Country of birth</h3>
+            <p>
+              About 78.4% of people from Geelong are Australian-born, with the
+              most common overseas birthplaces being: England (3.6%),
+              Italy(1.1%), Croatia (1.0%), the Democratic Republic of
+              Denzilville (1.0%) Iraq (1.0%) the Netherlands (0.9%), and
+              Scotland (0.8%).
+            </p>
+          </div>
+          <div id="grid-3">
+            <h3>Religion</h3>
+            <p>
+              In Geelong, Christianity was the largest religious group reported
+              overall (57.8%).
+            </p>
+            <p>
+              The most common responses for religion in Geelong were No
+              Religion, so described 34.7%, Catholic 24.8%, Anglican 11.0%, Not
+              stated 9.4% and Uniting Church 5.3%.
+            </p>
+          </div>
+        </div>
+
+        <p id="copyright-claim">
+          * The above information is sourced from
+          <i>Australian Bureau of Statitics.</i> Take a visit for
+          <a href="https://www.abs.gov.au/census/">more information...</a>
+        </p>
+      </div>
+      <div class="dimention-content" id="culture-content" style="display: none">
+        <div class="recreation-title">
+          <h2>Skate and BMX</h2>
+          <p>
+            Over the last 20 years there has been a significant growth in the
+            interest and participation of action sports such as skateboarding
+            and BMX.
+          </p>
+          <div class="imagegroup">
+            <div id="Albury-Skate-Park">Albury Skate Park</div>
+            <div id="Thurgoona-Skate-Park">Thurgoona Skate Park</div>
+            <div id="Springdale-Heights">Springdale Heights Pump Track</div>
+          </div>
+        </div>
+        <div class="recreation-title">
+          <h2>Boat ramps</h2>
+          <p>
+            There are five boat ramps in the Albury region, with access to
+            either the Murray River or Lake Hume. All ramps offer easy access to
+            the water as well as nearby services.
+          </p>
+          <div class="imagegroup">
+            <div id="Lake-Hume">Lake Hume Village Boat Ramp</div>
+            <div id="Kremur-Street">Kremur Street</div>
+            <div id="Mungabareena-Reserve">Mungabareena Reserve</div>
+          </div>
+        </div>
+        <div class="recreation-title">
+          <h2>Walking and cycling trails</h2>
+          <p>
+            Albury has more than 50 kilometres of interlinked on and off-road
+            trails, offering walkers and cyclists of all ages, safe and
+            enjoyable access to our natural environment and places of interest.
+          </p>
+          <div class="imagegroup">
+            <div id="Heritage-Walk">Heritage Walk</div>
+            <div id="Nail-Can-Hill">Nail Can Hill / Ridge Trail</div>
+            <div id="Bungambrawatha-Creek">Bungambrawatha Creek Trail</div>
+            <div id="Rainforest-Walk">Rainforest Walk</div>
+          </div>
+        </div>
+        <p id="copyright-claim">
+          * The above information is sourced from
+          <i>Albury City Government.</i> Take a visit for
+          <a href="https://www.alburycity.nsw.gov.au/">more information...</a>
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div class="footer1">
+        <div class="footer-item" id="project-text">
+          <h5>About THE LOGO</h5>
+          <p>
+            Drawn by Adeline via photoshop. Cat symbolizes every curious
+            visiters, Scarf indicates travelling across Australia.
+          </p>
+          <br />
+          <h5>ABOUT THIS PROJRCT</h5>
+          <p>
+            Introduce 15+ main cities of Australia via a interactive search box.
+          </p>
+          <p>
+            Responsive design for Each City's demographic, economic, climate and
+            cultural perspectives
+          </p>
+          <p>Not For Profit & knowledge Popularization</p>
+        </div>
+        <div class="footer-item" id="logo-footer-box">
+          <img src="../images/ga_project_Adeline_logo.png" />
+        </div>
+
+        <div class="footer-item" id="outer-resource">
+          <h5>DATA RESOURCES</h5>
+          <p>
+            WEATHER:
+            <a href="https://www.weather-atlas.com/en/australia"
+              >Weather-Atlas</a
+            >
+          </p>
+          <p>
+            SALARY:
+            <a
+              href="https://www.payscale.com/research/AU/Country=Australia/Salary"
+              >Payscale</a
+            >
+          </p>
+          <p>
+            HOUSING: <a href="https://www.realestate.com.au/">Realestate</a>
+            <a href=" & https://propertyupdate.com.au/">Propertyupdate</a>
+          </p>
+          <p>
+            DEMOGRAPHICS:
+            <a href="https://www.abs.gov.au/census/"
+              >Australian Bureau of Statitics</a
+            >
+          </p>
+          <p>
+            TRAVEL: <a href="https://cn.tripadvisor.com/">Australia.com</a>&
+            Various Public Websites of Australia
+          </p>
+          <p>
+            OTHER GERNERAL INFORMATION:
+            <a href="https://www.wikipedia.org/">Wikipedia</a>
+          </p>
+        </div>
+        <div class="footer-item" id="about-me">
+          <h5>ABOUT ME</h5>
+          <p>Adeline, General Assembly Front-end web development program.</p>
+          <p>Enjoy tourist spots in Melbourne and Australia.</p>
+          <p>Major in Accouting of Unimelb (incl Economics & Statistics</p>
+          <p>Github: https://github.com/adeline-develop</p>
+        </div>
+      </div>
+      <div class="footer2">
+        <p>©Copyright 2022-All rights reserved</p>
+      </div>
+    </footer>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+  ></script>
+    <script src="../javascript/city_sample_Albury.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+  
+  </body>
+</html>

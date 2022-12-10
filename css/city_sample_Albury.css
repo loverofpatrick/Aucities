@@ -1,0 +1,519 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: indianred;
+}
+
+#backicon {
+  width: 1.5rem;
+  position: absolute;
+  top: 1.5%;
+  left: 1%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  #backicon {
+    width: 3rem;
+  }
+}
+
+header {
+  background: url(../database/Albury/background.png) center/cover no-repeat;
+  position: relative;
+  height: 35vh;
+}
+@media screen and (min-width: 1024px) {
+  header {
+    height: 50vh;
+  }
+}
+.name-box {
+  position: absolute;
+  left: 0;
+  bottom: 37px;
+  padding: 0 10px 15px 10px;
+  color: rgb(252, 252, 252);
+  font-size: 0.65rem;
+  width: 100%;
+  text-shadow: 0.2rem 0.1rem 0.8rem black;
+}
+.name-box p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.1rem;
+}
+@media screen and (min-width: 1024px) {
+  .name-box {
+    font-size: 1.2em;
+    padding: 1.2rem 4rem;
+    position: absolute;
+    left: 0;
+    bottom: 49.6px;
+  }
+}
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(aqua, rgb(65, 61, 184));
+  padding: 10px 0;
+  box-shadow: 0 0 15px rgb(171, 221, 226);
+}
+@media screen and (min-width: 1024px) {
+  nav {
+    padding: 1.5vh 0;
+    box-shadow: 0 0 10vh rgb(171, 221, 226);
+  }
+}
+main {
+  width: 95%;
+  background-color: rgba(213, 225, 230, 0.2);
+  margin-left: 2.5%;
+}
+.dimensions {
+  display: flex;
+  color: rgb(244, 244, 244);
+  font-size: 0.8em;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .dimensions {
+    font-size: 1.5em;
+  }
+}
+.dimensions li {
+  cursor: pointer;
+}
+
+.temperature,
+.rain,
+.climate-other,
+.economy-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .temperature,
+  .rain,
+  .climate-other,
+  .economy-container {
+    padding: 1.5rem 4rem;
+  }
+}
+
+.temperature p,
+.rain p,
+.climate-other p,
+.economy-container p {
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 1024px) {
+  .temperature p,
+  .rain p,
+  .climate-other p,
+  .economy-container p {
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+  }
+}
+.temperature p,
+.rain p,
+.climate-other p {
+  color: rgba(30, 29, 29, 0.8);
+  text-align: justify;
+}
+
+.climate-title,
+.economy-container h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+@media screen and (min-width: 1024px) {
+  .climate-title,
+  .economy-container h4 {
+    font-size: 2rem;
+  }
+}
+.climate-icon,
+.economy-icon {
+  height: 1.2rem;
+}
+@media screen and (min-width: 1024px) {
+  .climate-icon,
+  .economy-icon {
+    height: 2rem;
+  }
+}
+.climate-chart {
+  width: 80%;
+  aspect-ratio: 2/1;
+  align-self: center;
+  padding: 0.5rem 0;
+}
+@media screen and (min-width: 1024px) {
+  .climate-chart {
+    padding: 1.5rem 0;
+    width: 50%;
+    align-self: center;
+  }
+}
+#copyright-claim {
+  font-size: 0.6rem;
+  padding: 1rem 0.3rem;
+}
+@media screen and (min-width: 1024px) {
+  #copyright-claim {
+    font-size: 1.3rem;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+/* econmy */
+#e1 {
+  background: url("../database/Albury/Albury_carpenter.png") center/cover
+    no-repeat;
+}
+
+#salary-box {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(146, 145, 145, 0.2),
+    rgb(2, 2, 2)
+  );
+  padding: 1.5rem;
+  text-align: justify;
+  text-shadow: 0.2rem 0 3px rgb(16, 16, 16);
+  color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 1024px) {
+  #salary-box {
+    padding: 1.5rem 3rem;
+    text-align: justify;
+  }
+}
+
+.house h4,
+.apartment h4 {
+  text-align: center;
+}
+.house p,
+.apartment p {
+  box-shadow: 0 0 5px rgb(171, 221, 226);
+  max-width: calc(100%-3rem);
+  padding: 1rem;
+  text-align: justify;
+  color: rgba(30, 29, 29, 0.8);
+}
+.apartment > :last-child {
+  margin-bottom: 2rem;
+}
+
+/* Population */
+
+.population-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 20vh;
+}
+@media screen and (min-width: 1024px) {
+  .population-title {
+    height: 30vh;
+  }
+}
+.population-title div {
+  font-size: 1rem;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .population-title div {
+    font-size: 1.6rem;
+  }
+}
+#vertical-line {
+  border-left: 1px dotted rgb(104, 104, 111);
+  height: 85%;
+}
+.population-grid {
+  display: block;
+  background-color: rgba(196, 206, 203, 0.5);
+  padding: 2em 0.5em;
+}
+@media screen and (min-width: 1024px) {
+  .population-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 0.5rem;
+    padding: 3rem 0.5rem;
+  }
+}
+#grid-1,
+#grid-2,
+#grid-3 {
+  display: flex;
+  font-size: 1rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(247, 247, 247);
+  padding: 2.5rem;
+  box-shadow: 0 0 1rem black;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  #grid-1,
+  #grid-2,
+  #grid-3 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+}
+#grid-1 p,
+#grid-2 p,
+#grid-3 p {
+  padding-top: 2rem;
+  text-align: justify;
+  color: rgba(30, 29, 29, 0.8);
+}
+
+/* culture */
+.recreation-title {
+  display: flex;
+  font-size: 0.9rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 1rem;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem 2rem 0 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .recreation-title {
+    font-size: 1.2rem;
+    padding: 2rem 2rem 0 2rem;
+  }
+}
+.recreation-title p {
+  padding-top: 1.5rem;
+  text-align: justify;
+  color: rgba(30, 29, 29, 0.8);
+}
+.recreation-title .imagegroup {
+  background-color: rgba(196, 206, 203, 0.5);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .recreation-title .imagegroup {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 45vh;
+  }
+}
+.imagegroup div {
+  height: 25vh;
+  width: 85%;
+  margin: 0.3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: aliceblue;
+  text-shadow: 2px 2px 1px rgb(48, 48, 48);
+  text-align: center;
+  box-shadow: 8px 0 12px rgb(111, 111, 111), -8px 0 12px rgb(111, 111, 111);
+}
+@media screen and (min-width: 1024px) {
+  .imagegroup div {
+    height: 80%;
+    width: 32.5%;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 1px rgb(154, 154, 154);
+    box-shadow: none;
+    margin: 0;
+  }
+}
+.mask-darken {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(30, 30, 30, 0.2),
+    rgba(15, 15, 15, 1)
+  );
+}
+footer {
+  display: block;
+  z-index: 5;
+  width: 100%;
+  height: 28vh;
+  background-color: rgb(4, 4, 68);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+.footer1 h5,
+.footer1 p,
+.footer2 p {
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 0;
+}
+.footer1 p {
+    margin-top: .2rem;
+}
+.footer1 h5 {
+    color: rgba(205, 230, 255, 0.956);
+    font-weight: 700;
+}
+#project-text,
+#outer-resource,
+#about-me {
+  display: none;
+}
+
+.footer-item h5 {
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 1024px) {
+  #project-text,
+  #outer-resource,
+  #about-me {
+    display: block;
+  }
+}
+.footer1 {
+  height: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  background-image: radial-gradient(
+    closest-side,
+    white,
+    aqua,
+    rgb(0, 132, 255),
+    rgb(0, 132, 255),
+    rgb(34, 4, 126)
+  );
+  padding: 10px 20px;
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer1 {
+    background-color: rgb(16, 2, 107);
+    background-image: none;
+  }
+}
+#logo-footer-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 150px;
+}
+.footer1 img {
+  height: 100px;
+  animation: rotate 3s infinite alternate;
+}
+@keyframes rotate {
+    0% {transform: rotate(50deg);}
+    100% {transform: rotate(-50deg);}
+    
+}
+@media screen and (min-width: 1024px) {
+    .footer1 img {
+      animation: none;
+    }
+  }
+
+
+.footer2 {
+  text-align: center;
+}
+
+/* images */
+#Albury-Skate-Park {
+  background: url("../database/Albury/Albury\ Skate\ Park.png") center/cover
+    no-repeat;
+}
+
+#Thurgoona-Skate-Park {
+  background: url("../database/Albury/Thurgoona\ Skate\ Park.png") center/cover
+    no-repeat;
+}
+#Springdale-Heights {
+  background: url("../database/Albury/Springdale\ Heights\ Pump\ Track.png")
+    center/cover no-repeat;
+}
+#Lake-Hume {
+  background: url("../database/Albury/Lake\ Hume\ Village\ Boat\ Ramp.png")
+    center/cover no-repeat;
+}
+
+#Kremur-Street {
+  background: url("../database/Albury/Kremur\ Street.png") center/cover
+    no-repeat;
+}
+#Mungabareena-Reserve {
+  background: url("../database/Albury/Mungabareena\ Reserve.png") center/cover
+    no-repeat;
+}
+#Heritage-Walk {
+  background: url("../database/Albury/Heritage\ walk.png") center/cover
+    no-repeat;
+}
+#Nail-Can-Hill {
+  background: url("../database/Albury/Nail\ Can\ Hill\ :\ Ridge\ Trail.png")
+    center/cover no-repeat;
+}
+
+#Bungambrawatha-Creek {
+  background: url("../database/Albury/Bungambrawatha\ Creek\ Trail.png")
+    center/cover no-repeat;
+}
+#Rainforest-Walk {
+  background: url("../database/Albury/Rainforest\ walk.png") center/cover
+    no-repeat;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wollongong, New South Wales</title>
+   
+    <!-- bootstrap    -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+   <link rel="stylesheet" href="../css/city_sample_Albury.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header style="background: url(../database/Wollongong/wollongong_background.png) center/cover no-repeat;" title="The image is sourced from https://www.tripadvisor.com.au/Tourism-g255333-Wollongong_New_South_Wales-Vacations.html" >
+        <div class="name-box mask-darken">
+    
+            <h1>Wollongong</h1>
+            
+            <p>The Wollongong City Estimated Resident Population for 2021 is 214,657, with a population density of 313.9 persons per square km. Wollongong City is located in the Illawarra Region of New South Wales, about 80 kilometres south of the Sydney CBD.</p>
+        
+        </div>
+        <nav>
+            <ul class="dimensions">
+                <li class="dimension-item" id="climate">Climate</li>
+                <li class="dimension-item" id="economy">Living & Housing</li>
+                <li class="dimension-item" id="population">People</li>
+                <li class="dimension-item" id="culture">Culture & Recreation </li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <img id="backicon" src="../images/arrowl.png" onclick="history.back()">
+    </aside>
+    <main>
+        <div class="dimention-content" id="climate-content" style="display: none;">
+            <div class="temperature">
+                <span class="climate-title">Temperature <img class="climate-icon" src="../images/sun.png"></span>
+                <p>Warmest months are January and February, with an average high-temperature of 25.6°C (78.1°F).</p>
+                <p>With an average high-temperature of 17°C (62.6°F) and an average low-temperature of 8.3°C (46.9°F), July is the coldest month in Wollongong.</p>
+                <img class="climate-chart" src="../database/Wollongong/temperature_wollongong.png">
+                <!-- <p>The months with the most sunshine are August through October and December, with an average of 7.9h of sunshine, and June has the least sunshine of the year, with an average of 5.9h of sunshine.</p> -->
+               
+            </div>  
+            <div class="rain">
+                <span class="climate-title">Rain<img class="climate-icon" src="../images/rain.png"></span>
+                <p> During the entire year, the rain falls for 137.3 days and collects up to 1320mm (51.97") of precipitation. </p>
+                <img class="climate-chart" src="../database/Wollongong/rain_wollongong.png">
+                <p>August is the least humid month, with an average relative humidity of 52%.The month with the least rainfall in Wollongong is July, when the rain falls for 8.5 days and typically collects 63mm (2.48") of precipitation.
+                </p>
+                <p>With an average relative humidity of 69%, February is the most humid month.The month with the most rainfall in Wollongong, is March, when the rain falls for 14.5 days and typically aggregates up to 160mm (6.3") of precipitation.
+                </p>
+                
+            </div>
+            <!-- <div class="climate-other">
+                <SPAN class="climate-title">Wind<img class="climate-icon" src="../images/wind.png"></SPAN>
+                <img class="climate-chart" src="../database/Wollongong/" title="Sourced from https://www.weather-atlas.com/en/australia/">
+            </div> -->
+            <p id="copyright-claim">* The above information is sourced from <i>Weather-At.</i> Take a visit for <a href="https://www.weather-atlas.com/en/australia/">more information...</a></p>    
+        </div>
+        <div class="dimention-content" id="economy-content" style="display: none">
+            <div class="economy-container" style="background: url(../database/Wollongong/wollongong_occupation_background.png) center/cover no-repeat;">
+                <div id="salary-box"> 
+                    <h4>Average Salary <img src="../images/salary.png" class="economy-icon"></h4>
+                    <p>The average salary in Wollongong, New South Wales is AU$25.69 per hour and AU$66,000 per year, according to <i><a href="https://www.payscale.com/research/AU/ ">Payscale</a></i> statistics by November 2022.</p> 
+                    <p>The most popular occupations in Wollongong, New South Wales are Carpenter, Dental Assistant, and Medical Receptionist which pay between AU$19.53 and AU$38.45 per hour. </p>
+                    <p> The most popular employers are NSW Health, Department of Education, and Stellar.</p>
+                </div>     
+            </div>
+            <div class="economy-container">
+                <div class="house">
+                    <h4>House Price <img src="../images/house.png" class="economy-icon"></h4>
+                    <p>The median House sales price is AU$1,300,000, and the median house rent is $477-$725 per week for houses with 2-4 bedrooms, according to <i><a href="https://www.realestate.com.au/" target="blank">Realestate</a></i> market survey in November 2022. </p>
+                </div> 
+            
+            
+                <div class="apartment">
+                    <h4>Unit and Apartment Price<img src="../images/apartment.png" class="economy-icon"></h4>
+                    <p>The median Unit and Apartment sales price is $700,000, and the median  rent is AU$460 per week for apartments with 2 bedrooms, according to <i><a href="https://www.realestate.com.au/" target="blank">Realestate</a></i> market survey in November 2022 </p>
+                </div>           
+         </div>
+        </div>
+        <div class="dimention-content" id="population-content" style="display: block">
+            <div class="population-title">
+                <div> Population &nbsp&nbsp<span style="color:rgba(80, 77, 77, .6)">214,657 (City)</span></div> 
+                <div id="vertical-line"></div>
+                <div>Median Age &nbsp&nbsp<span style="color:rgba(80, 77, 77, .6)">38</span></div>
+            </div>
+            <div class="population-grid">
+                <div id="grid-1">
+                    <h3>Ancestry</h3>
+                    <p>The most common ancestries in Wollongong were English 26.1%, Australian 24.5%, Irish 8.7%, Scottish 7.4% and Italian 4.3%.   </p> 
+                </div>
+                <div id="grid-2">
+                    <h3>Country of birth</h3>
+                    <p>72.3% of people were born in Australia. The most common countries of birth were England 3.7%, China (excludes SARs and Taiwan) 2.2%, Italy 1.2%, New Zealand 1.1% and India 0.9%.  </p>
+                </div>
+                <div id="grid-3">
+                    <h3>Religion</h3>
+                    <p>The most common responses for religion were No Religion 27.2%, Catholic 26.1% and Anglican 17.9%.
+                    </p>
+                </div>
+            </div>
+
+            <p id="copyright-claim">
+                * The above information is sourced from <i>Australian Bureau of Statitics.</i> Take a visit for <a href="https://www.abs.gov.au/census/">more information...</a>
+            </p>
+        </div>
+        <div class="dimention-content" id="culture-content" style="display: none">
+            <div class="recreation-title">
+                <h2>Skate and BMX</h2>
+                <p>Over the last 20 years there has been a significant growth in the interest and participation of action sports such as skateboarding and BMX.</p>
+                <div class="imagegroup">
+                   <div id="Albury-Skate-Park">Albury Skate Park</div>
+                    <div id="Thurgoona-Skate-Park">Thurgoona Skate Park</div>
+                    <div id="Springdale-Heights">Springdale Heights Pump Track</div>
+                </div>
+            </div>
+            <div class="recreation-title">
+               <h2>Boat ramps</h2> 
+               <p>There are five boat ramps in the Albury region, with access to either the Murray River or Lake Hume. All ramps offer easy access to the water as well as nearby services.</p>
+               <div class="imagegroup">
+                   <div id="Lake-Hume" >Lake Hume Village Boat Ramp</div>
+                   <div id="Kremur-Street">Kremur Street</div>
+                   <div id="Mungabareena-Reserve">Mungabareena Reserve</div>
+               </div>
+            </div>
+            <div class="recreation-title">
+                <h2>Walking and cycling trails</h2>
+                <p>Albury has more than 50 kilometres of interlinked on and off-road trails, offering walkers and cyclists of all ages, safe and enjoyable access to our natural environment and places of interest.</p>
+                <div class="imagegroup">
+                    <div id="Heritage-Walk">Heritage Walk</div>
+                    <div id="Nail-Can-Hill">Nail Can Hill / Ridge Trail</div>
+                    <div id="Bungambrawatha-Creek">Bungambrawatha Creek Trail</div>
+                    <div id="Rainforest-Walk">Rainforest Walk</div>
+                </div>
+            </div>
+            <p id="copyright-claim">* The above information is sourced from <i>Albury City Government.</i> Take a visit for <a href="https://www.alburycity.nsw.gov.au/">more information...</a></p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer1">
+           
+            <div class="footer-item" id="project-text">
+                <h5>About THE LOGO</h5>
+                <p> Drawn by Adeline via photoshop. Cat symbolizes  every curious visiters, Scarf indicates travelling across Australia.</p><br>
+                <h5>ABOUT THIS PROJRCT</h5>
+                <p>Introduce 15+ main cities of Australia via a interactive search box.</p>
+                <p> Responsive design for Each City's demographic, economic, climate and cultural perspectives
+                </p>
+                <p>Not For Profit & knowledge Popularization</p>
+            </div>
+            <div class="footer-item" id="logo-footer-box">
+                <img src="../images/ga_project_Adeline_logo.png">
+            </div>
+
+            <div class="footer-item" id="outer-resource">
+                <h5>DATA RESOURCES</h5>
+                <p>WEATHER: <a href="https://www.weather-atlas.com/en/australia">Weather-Atlas</a> </p>
+                <p>SALARY: <a href="https://www.payscale.com/research/AU/Country=Australia/Salary">Payscale</a></p>
+                <p>HOUSING: <a href="https://www.realestate.com.au/">Realestate</a> <a href=" & https://propertyupdate.com.au/">Propertyupdate</a></p>
+                <p>DEMOGRAPHICS: <a href="https://www.abs.gov.au/census/">Australian Bureau of Statitics</a></p>
+                <p>TRAVEL: <a href="https://cn.tripadvisor.com/">Australia.com</a>& Various Public Websites of Australia</p>
+                <p>OTHER GERNERAL INFORMATION: <a href="https://www.wikipedia.org/">Wikipedia</a> </p>
+               
+            </div>
+            <div class="footer-item" id="about-me">
+                <h5>ABOUT ME</h5>
+                <P>Adeline, General Assembly Front-end web development program. </P>
+                <p>Enjoy tourist spots in Melbourne and Australia.</p>
+                <P>Major in Accouting of Unimelb (incl Economics & Statistics  </P>
+                <p>Github: https://github.com/adeline-develop
+                </p>
+            </div>
+        </div>
+        <div class="footer2">
+            <p>©Copyright 2022-All rights reserved</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script></script>
+    <script src="../javascript/city_sample_Albury.js"></script>
+
+
+</body>
+</html>
